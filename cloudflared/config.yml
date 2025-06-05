@@ -1,0 +1,7 @@
+tunnel: bee-tunnel
+credentials-file: /etc/cloudflared/bee-tunnel.json
+
+ingress:
+  - hostname: bee.austin-chen.com
+    service: http://app:8765
+  - service: http_status:404
